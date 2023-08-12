@@ -1,7 +1,3 @@
-Certainly! Here's an example of a detailed README file that provides instructions for setting up and running the application:
-
----
-
 # Full-Stack User Authentication App
 
 This is a full-stack web application that demonstrates user registration, login, and authentication. It includes both front-end and back-end components and utilizes technologies such as HTML, CSS, Express.js, and MongoDB.

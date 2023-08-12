@@ -1,5 +1,5 @@
 exports.signUpValidator= (req,res,next)=>{
-    const {name,email,password,bio,username}=req.body();
+    const {name,email,password,bio,username}=req.body;
 
     if (req.body() && name && email && password && bio && username) {
         next();

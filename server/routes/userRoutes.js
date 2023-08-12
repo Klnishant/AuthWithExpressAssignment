@@ -8,9 +8,9 @@ const {authenticateUser}=require('../middlewares/authenticationValidator.js')
 
 const userRoute=express.Router();
 
-userRoute.post("/signup",signUpValidator,userSignUp);
-userRoute.post("/login",logInValidator,logIn);
-userRoute.get("/",authenticateUser,getUserDetails);
+userRoute.post("/signup",signUpValidator(),userSignUp());
+userRoute.post("/login",logInValidator(),logIn());
+userRoute.get("/",authenticateUser(),getUserDetails());
 
 module.exports= {
     userRoute

@@ -5,7 +5,7 @@ const jwt=require('jsonwebtoken');
 const bcrypt=require('bcrypt');
 
 exports.logIn=async (req,res)=>{
-   const {username,password}=req.body();
+   const {username,password}=req.body;
    try {
         const getUserData=await user.findOne({username}).select("+password");
         if (getUserData && getUserData.username) {

@@ -5,7 +5,7 @@ const jwt=require('jsonwebtoken');
 const bcrypt=require('bcrypt');
 
 exports.getUserDetails= async (req,res)=>{
-    const {id,username}=req.body();
+    const {id,username}=req.body;
 
     try {
         const userDetails=await user.findOne({username});
